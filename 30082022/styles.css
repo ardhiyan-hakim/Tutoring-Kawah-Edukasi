@@ -7,10 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  height: 200vh;
-}
-
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -18,10 +15,11 @@ nav {
   background-color: black;
   width: 100%;
   height: auto;
-  padding: 10px 20px;
+  padding: 10px 5%;
   font-weight: 300;
   font-size: 1.3rem;
   top: 0;
+  z-index: 5;
 }
 
 .navbar-item,
@@ -107,10 +105,167 @@ nav {
   height: 100%;
   background-color: black;
   color: white;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: 0.3s ease;
 }
 
 .navbar-item .sign-in:hover:after {
   width: 100%;
+}
+
+/* Main Content */
+main {
+  min-height: calc(100vh - 125px);
+  height: auto;
+  padding: 3% 5%;
+}
+
+main h2 {
+  margin-bottom: 30px;
+}
+
+main .card-container {
+  display: grid;
+  grid-template-columns: 19% 19% 19% 19% 19%;
+  gap: 16px;
+  align-items: center;
+}
+
+.card-container .card {
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card-container .card:hover {
+  transform: translateY(-5px);
+}
+
+.card .card-header {
+  height: 85%;
+  border: 1px solid black;
+  border-radius: 8px 8px 0 0;
+  border-bottom: none;
+}
+
+.card .card-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0 0 8px 8px;
+  border-top: none;
+  height: 15%;
+}
+
+.card-image {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.card .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(2) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Latte_at_Doppio_Ristretto_Chiang_Mai_01.jpg/509px-Latte_at_Doppio_Ristretto_Chiang_Mai_01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(3) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(4) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg/1280px-Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(5) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(6) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Doppio.jpg/2560px-Doppio.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(7) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/1/16/Caf%C3%A9Cortado%28Tallat%29.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(8) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/f/f7/Linea_doubleespresso.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(9) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Gal%C3%A3o.jpg/1280px-Gal%C3%A3o.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(10) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(11) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/0/07/Caff%C3%A8_Espresso_Macchiato_Schiumato.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(12) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/f/f6/Mocaccino-Coffee.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(13) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/1/12/Doppio_ristretto_Chiang_Mai.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(14) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/6/6b/Flat_white_coffee_with_pretty_feather_pattern.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-child(15) .card-header .card-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/1/17/Vinoteca%2C_Smithfield%2C_London_%284485849609%29.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
 }
